@@ -25,7 +25,8 @@
 
 			$(settings.palavras).each(function(){
 
-				novo_conteudo = novo_conteudo.replace(eval("/ "+this+"/g"), " <span style='" + weight + " " + color + "'>" + this + "</span>");
+				var highlight = " <span style='" + weight + " " + color + "'>" + this + "</span>";
+				novo_conteudo = novo_conteudo.replace(eval("/ "+this+"/g"), highlight);
 
 			});
 
