@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<title>jQuery: Como criar seu próprio plugin - Programação (des)complicada! - LeandroSanches.com.br</title>
+</head>
+<body>
+	<div class="content">
+
+		<div id="textos" style="display: none;">
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum malesuada neque id vehicula. Donec sed sagittis lacus. Fusce ut ornare sapien. Nulla tempor lectus sit amet sapien varius, non vehicula libero accumsan. Praesent mollis sit amet ipsum nec sodales. Phasellus sagittis eros quis risus vulputate feugiat. Curabitur eget dui pellentesque lectus suscipit sagittis id nec orci.</p>
+
+			<p>Integer scelerisque mi et leo condimentum, sed malesuada nulla rhoncus. Quisque ultrices varius augue vel semper. Suspendisse eleifend eget sem ac luctus. Donec metus risus, gravida a semper a, eleifend sed erat. Nunc a urna dapibus mi maximus vulputate. Suspendisse dignissim auctor odio, eget posuere neque mollis id. Nunc ut ex fermentum, euismod orci nec, condimentum lorem. Curabitur et scelerisque eros. Duis nisl nunc, molestie eu vehicula sit amet, laoreet et ligula. Integer vel interdum risus. Etiam eget molestie nibh. Vestibulum elit erat, vulputate eu feugiat in, porttitor et velit. Integer et ante eget odio mollis mollis. Fusce rutrum semper enim sed ornare. Sed sodales lectus ac urna suscipit dapibus. Integer vitae nisl purus.</p>
+
+			<p>Aliquam cursus sodales dictum. Sed tincidunt mollis blandit. Fusce quis urna eu dui dignissim lobortis suscipit sed felis. Nunc mattis massa vitae enim interdum pulvinar eleifend mollis ligula. Integer vitae dictum velit. Phasellus consequat molestie elit quis vestibulum. Sed placerat ex purus, quis accumsan orci convallis at. Vestibulum convallis facilisis lorem vel congue. Nam finibus massa sem, sed laoreet magna ultricies et. Integer eu tincidunt orci. Donec non purus purus. Praesent semper dui vitae velit fermentum dictum. In ultricies ultricies ex, ut efficitur ante porta vel. Integer tempor odio a est blandit, at gravida massa eleifend. Donec viverra viverra pretium.</p>
+
+			<p>Fusce tincidunt molestie urna eget maçã. Nulla quis porta mauris. Aliquam hendrerit justo id viverra sollicitudin. Proin vehicula ipsum vel lorem commodo, vitae congue nulla ornare. Phasellus id enim risus. Vestibulum quis mi at neque cursus luctus. Quisque faucibus neque elit, at condimentum justo euismod nec. Ut in finibus eros. Maecenas vel nisl at lectus tempus accumsan vitae sed quam. Aliquam justo felis, semper sit amet malesuada eget, aliquet ac nisl. Mauris accumsan aliquam quam id interdum. Nulla facilisi. Nulla blandit maximus nibh at porta. Mauris mauris lorem, commodo id odio ut, dignissim pharetra arcu. Nunc posuere fringilla urna, sed condimentum lectus vestibulum sit amet. Sed vel ligula condimentum, viverra lorem sed, rutrum velit.</p>
+
+			<p>Mais informações em <a href="http://leandrosanches.com.br/jquery-como-criar-seu-proprio-plugin/" target="_blank">LeandroSanches.com.br</a></p>
+
+		</div>
+
+	</div>
+	<script type="text/javascript" src="../src/jquery/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="../src/highlighter.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#textos").highlighter({
+				palavras: ["lorem", "viverra", "maçã"],
+				negrito: false,
+				color: "greenyellow"
+			}).fadeIn();
+
+		});
+	</script>
+</body>
